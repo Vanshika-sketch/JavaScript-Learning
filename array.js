@@ -1,1 +1,0 @@
-let a = [] //creating an empty array
