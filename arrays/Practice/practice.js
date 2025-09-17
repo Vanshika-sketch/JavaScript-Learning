@@ -22,7 +22,31 @@
 // console.log(a[1])
 // console.log(a[2])
 
+// ARRAY PROPERTIES
 
-// Accessing the First Element of an Array
+//length -> returns the number of elements also from these we can access the elements from array
+let numbers = [1,2,3,4,5]
+console.log(numbers.length)
+// indexof -> finds index of elememt(return -1 if not found
 
-let a = new Array
+// common array methods
+
+// push() → add at end
+// pop() → remove from end
+// unshift() → add at beginning
+// shift() → remove from beginning
+
+let arr =[1,2]
+
+// arr.push(3)
+// arr.pop()
+// arr.unshift(0)
+// arr.shift()
+// console.log(arr)
+
+// iterating loops
+// for loop
+
+for( let i = 0 ; i < arr.length ; i++){
+    console.log(arr[i])
+}
