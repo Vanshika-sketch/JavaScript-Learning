@@ -54,6 +54,7 @@
 // filter questions
 // Filter even numbers
 
+
 // let numbers = [10,20,30,22,333,4]
 // let even = numbers.filter(num => num % 2 === 0 )
 
@@ -61,6 +62,11 @@
 
 // Filter words longer than 4 characters
 
-let words = ["hi" , "hello" , "code" , "html" , "css" , " nope"]
-let longwords = words.filter( word => word.length > 4)
-console.log(longwords)
+// let words = ["hi" , "hello" , "code" , "html" , "css" , " nope"]
+// let longwords = words.filter( word => word.length > 4)
+// console.log(longwords)
+
+// Filter unique values (with indexOf)
+let arr = [1, 2, 2, 3, 4, 4, 5,4,6,4,7,9,90]
+let unique =arr.filter((item ,index)=>arr.indexOf(item)=== index)
+console.log(unique)
