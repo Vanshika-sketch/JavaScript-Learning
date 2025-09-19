@@ -67,6 +67,13 @@
 // console.log(longwords)
 
 // Filter unique values (with indexOf)
-let arr = [1, 2, 2, 3, 4, 4, 5,4,6,4,7,9,90]
-let unique =arr.filter((item ,index)=>arr.indexOf(item)=== index)
-console.log(unique)
+// let arr = [1, 2, 2, 3, 4, 4, 5,4,6,4,7,9,90]
+// let unique =arr.filter((item ,index)=>arr.indexOf(item)=== index)
+// console.log(unique)
+
+// Filtering with index
+
+let nums = [5,10,44,3,44,55,33,1,5,20]
+
+let greaterThanIndex = nums.filter((num , index)=>num>index)
+console.log(greaterThanIndex)
