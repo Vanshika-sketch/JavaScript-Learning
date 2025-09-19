@@ -73,7 +73,43 @@
 
 // Filtering with index
 
-let nums = [5,10,44,3,44,55,33,1,5,20]
+// let nums = [5,10,44,3,44,55,33,1,5,20]
 
-let greaterThanIndex = nums.filter((num , index)=>num>index)
-console.log(greaterThanIndex)
+// let greaterThanIndex = nums.filter((num , index)=>num>index)
+// console.log(greaterThanIndex)
+
+// 1. Purpose :
+/* map() → transforms each element and returns a new array of the same length. 
+filter() → selects certain elements (based on a condition) and returns a new array that may be shorter (or empty)
+*/
+
+// let nums = [1,2,3,4,5]
+// let square = nums.map(n => n*n)
+
+// console.log("squares : " ,square) // here the map transformed each element into the square . the new array is the same length as the original
+// console.log("nums : " , nums)
+
+
+// let num = [1,2,3,4,5,6,7]
+// let evens = num.filter(n => n%2 === 0)
+
+// console.log("evens : ", evens) // here the filter kept only that are even , the new array is shorter
+// console.log("num : " ,num)
+
+let products = [
+    {name : "laptop",price : 800},
+    {name : "mouse", price : 20},
+    {name : "keyboard" , price : 74},
+    {name : "phone" , price : 755}
+]
+// find names of products that cost more than 100
+
+let result = products.
+filter(p => p.price >100) // keep only expensive 
+.map(p => p.name)              // transfor to just names
+
+console.log(result)
+
+/* Use map when you want to transform every element.
+Use filter when you want to keep only some elements.
+They can also be chained together.*/
