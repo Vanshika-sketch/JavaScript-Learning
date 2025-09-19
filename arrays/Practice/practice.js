@@ -25,8 +25,8 @@
 // ARRAY PROPERTIES
 
 //length -> returns the number of elements also from these we can access the elements from array
-let numbers = [1,2,3,4,5]
-console.log(numbers.length)
+// let numbers = [1,2,3,4,5]
+// console.log(numbers.length)
 // indexof -> finds index of elememt(return -1 if not found
 
 // common array methods
@@ -36,7 +36,7 @@ console.log(numbers.length)
 // unshift() → add at beginning
 // shift() → remove from beginning
 
-let arr =[1,2]
+// let arr =[1,2]
 
 // arr.push(3)
 // arr.pop()
@@ -47,6 +47,14 @@ let arr =[1,2]
 // iterating loops
 // for loop
 
-for( let i = 0 ; i < arr.length ; i++){
-    console.log(arr[i])
-}
+// for( let i = 0 ; i < arr.length ; i++){
+//     console.log(arr[i])
+// }
+
+// filter questions
+// Filter even numbers
+
+let numbers = [10,20,30,22,333,4]
+let even = numbers.filter(num => num % 2 === 0 )
+
+console.log(even)
