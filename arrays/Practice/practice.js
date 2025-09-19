@@ -54,7 +54,13 @@
 // filter questions
 // Filter even numbers
 
-let numbers = [10,20,30,22,333,4]
-let even = numbers.filter(num => num % 2 === 0 )
+// let numbers = [10,20,30,22,333,4]
+// let even = numbers.filter(num => num % 2 === 0 )
 
-console.log(even)
+// console.log(even)
+
+// Filter words longer than 4 characters
+
+let words = ["hi" , "hello" , "code" , "html" , "css" , " nope"]
+let longwords = words.filter( word => word.length > 4)
+console.log(longwords)
