@@ -57,6 +57,18 @@ let subjects = {
 //The hasOwnProperty() method in JavaScript checks if an object has a specific property as its own (not inherited). 
 
 // iterating through object properties
-for(let key in subjects){
-    console.log(key + ":" + subjects[key])
-}
+// for(let key in subjects){
+//     console.log(key + ":" + subjects[key])
+// }
+// merging objects
+
+// let obj1 ={name : "rov"}
+// let obj2 = {age : 52}
+
+// let obj3 = {...obj1,...obj2} // also spread syntax
+// console.log(obj3)
+// The Object.assign() method is used to copy the values and properties from one or more source objects to a target object. It invokes getters and setters since it uses both [[Get]] on the source and [[Set]] on the target
+
+// object length
+let obj = {name : "rov" , age : 23}
+console.log(Object.keys(obj).length)
