@@ -1,0 +1,1 @@
+delete student.isEnrolled

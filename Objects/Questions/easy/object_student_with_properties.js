@@ -17,3 +17,4 @@ console.log(student.age)
 // Bracket notaion
 console.log(student['course'])
 console.log(student['isEnrolled'])
+
