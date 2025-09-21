@@ -69,6 +69,7 @@ let subjects = {
 // console.log(obj3)
 // The Object.assign() method is used to copy the values and properties from one or more source objects to a target object. It invokes getters and setters since it uses both [[Get]] on the source and [[Set]] on the target
 
-// object length
-let obj = {name : "rov" , age : 23}
-console.log(Object.keys(obj).length)
+// // object length
+// let obj = {name : "rov" , age : 23}
+// console.log(Object.keys(obj).length)
+
