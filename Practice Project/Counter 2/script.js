@@ -16,5 +16,5 @@ decreaseBtn.addEventListener("click",function(){
 })
 resetBtn.addEventListener("click",function(){
     count = 0
-    countValue.texContent = count
+    countValue.textContent = count
 })
