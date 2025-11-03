@@ -15,8 +15,15 @@ function rollDie(){
     const value = randomInt(1,6)    // generate 1..6
     resultSpan.textContent = value;    // show latest result
 
-}
+
 //create  a new list item for history
 
 const li= document.createElement("li")
-li.textContent = `You rolled : $(value)` // set visible text
+li.textContent = `You rolled : ${value}` // set visible text
+
+// insert at top so newest appears first
+historyList.insertBefore(li,historyList.firstChild)
+}
+
+// run rollDie when the button is clicked
+rollBtn.addEventListener("click",rollDie)
