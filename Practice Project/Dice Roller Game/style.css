@@ -1,0 +1,73 @@
+/* reset/base */
+*{
+    box-sizing:border-box;
+    margin :0;
+    padding: 0;
+    box-sizing : border-box;
+    font-family:'Poppins',sans-serif;
+}
+/* body Styling */
+body {
+    background: #f4f4f9;
+    color : #333;
+    text-align: center;
+    padding:50px;
+}
+/* Heading */
+
+h1 {
+    font-size:2.5rem;
+    color:#4A4AFF;
+    margin-bottom:20px;
+}
+/* Button Styling */
+
+button {
+  background-color: #4A4AFF;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+/* 
+Button Hover */
+
+button:hover {
+  background-color: #3737e6;
+  transform: scale(1.05);
+}
+/* Result Text */
+p {
+  margin-top: 20px;
+  font-size: 1.3rem;
+}
+span#result {
+  font-weight: bold;
+  color: #ff4747;
+}
+/* History Section */
+h2 {
+  margin-top: 40px;
+  color: #222;
+}
+ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+li {
+  background: white;
+  margin: 5px auto;
+  padding: 10px;
+  width: 150px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: 0.2s;
+}
+
+li:hover {
+  background-color: #eee;
+}
