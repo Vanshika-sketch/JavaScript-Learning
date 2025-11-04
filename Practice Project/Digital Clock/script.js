@@ -17,6 +17,7 @@ function formatDate(d) {
   const day = pad(d.getDate());
   const monthName = months[d.getMonth()];
   const year = d.getFullYear();
+  
   return `${dayName}, ${day} ${monthName} ${year}`;
 }
 // Update clock once (set the DOM values)
