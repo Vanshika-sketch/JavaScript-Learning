@@ -47,3 +47,11 @@ function clearAll() {
   num2Input.value = "";
   resultSpan.textContent = "--";
 }
+
+// Wire buttons to functions
+addBtn.addEventListener("click", add);
+subBtn.addEventListener("click", subtract);
+mulBtn.addEventListener("click", multiply);
+divBtn.addEventListener("click", divide);
+clearBtn.addEventListener("click", clearAll);
+
