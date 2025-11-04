@@ -15,3 +15,29 @@ function readInputs() {
   const b = Number(num2Input.value);
   return { a, b };
 }
+
+
+// Operation functions
+function add() {
+  const { a, b } = readInputs();
+  resultSpan.textContent = a + b;
+}
+
+function subtract() {
+  const { a, b } = readInputs();
+  resultSpan.textContent = a - b;
+}
+
+function multiply() {
+  const { a, b } = readInputs();
+  resultSpan.textContent = a * b;
+}
+
+function divide() {
+  const { a, b } = readInputs();
+  if (b === 0) {
+    resultSpan.textContent = "Error: divide by 0";
+    return;
+  }
+  resultSpan.textContent = a / b;
+}
