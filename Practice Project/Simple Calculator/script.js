@@ -41,3 +41,9 @@ function divide() {
   }
   resultSpan.textContent = a / b;
 }
+
+function clearAll() {
+  num1Input.value = "";
+  num2Input.value = "";
+  resultSpan.textContent = "--";
+}
