@@ -1,58 +1,79 @@
-/* reset/base */
-*{
-    box-sizing:border-box;
-    margin :0;
-    padding: 0;
-    box-sizing : border-box;
-    font-family:'Poppins',sans-serif;
+/* ========== Reset / Base ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
-/* body Styling */
+
+/* ========== Body Styling ========== */
 body {
-    background: #f4f4f9;
-    color : #333;
-    text-align: center;
-    padding:50px;
+  background: #f4f4f9;
+  color: #333;
+  text-align: center;
+  padding: 50px;
 }
-/* Heading */
 
+/* ========== Heading ========== */
 h1 {
-    font-size:2.5rem;
-    color:#4A4AFF;
-    margin-bottom:20px;
+  font-size: 2.5rem;
+  color: #4a4aff;
+  margin-bottom: 20px;
 }
-/* Button Styling */
 
+/* ========== Button Styling ========== */
 button {
-  background-color: #4A4AFF;
+  background-color: #4a4aff;
   color: white;
   border: none;
   padding: 12px 24px;
   font-size: 1rem;
   border-radius: 8px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
-/* 
-Button Hover */
 
 button:hover {
   background-color: #3737e6;
   transform: scale(1.05);
 }
-/* Result Text */
+
+button:focus {
+  outline: 3px solid rgba(74, 74, 255, 0.25);
+  outline-offset: 2px;
+}
+
+/* ========== Result ========== */
 p {
   margin-top: 20px;
   font-size: 1.3rem;
 }
-span#result {
+
+#result {
   font-weight: bold;
   color: #ff4747;
+  display: inline-block;
 }
-/* History Section */
+
+/* ========== Shake Animation ========== */
+@keyframes rollShake {
+  0% { transform: rotate(0deg) scale(1); }
+  25% { transform: rotate(-10deg) scale(0.95); }
+  50% { transform: rotate(10deg) scale(1.05); }
+  75% { transform: rotate(-5deg) scale(1); }
+  100% { transform: rotate(0deg) scale(1); }
+}
+
+#result.shake {
+  animation: rollShake 0.4s cubic-bezier(.2,.9,.3,1);
+}
+
+/* ========== History Section ========== */
 h2 {
   margin-top: 40px;
   color: #222;
 }
+
 ul {
   list-style: none;
   margin-top: 10px;
@@ -62,10 +83,10 @@ li {
   background: white;
   margin: 5px auto;
   padding: 10px;
-  width: 150px;
+  width: 160px;
   border-radius: 6px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  transition: 0.2s;
+  transition: background 0.2s;
 }
 
 li:hover {
