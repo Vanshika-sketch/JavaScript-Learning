@@ -17,3 +17,11 @@ function getRandomQuote() {
   const randomIndex = Math.floor(Math.random() * quotes.length);
   return quotes[randomIndex];
 }
+// Step 4: Function to display quote
+function displayQuote() {
+  const { text, author } = getRandomQuote();
+  quoteElement.textContent = `"${text}"`;
+  authorElement.textContent = `— ${author}`;
+}
+// Step 5: Add click event listener
+newQuoteBtn.addEventListener("click", displayQuote);
