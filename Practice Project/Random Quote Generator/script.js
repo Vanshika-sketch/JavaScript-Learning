@@ -17,11 +17,24 @@ function getRandomQuote() {
   const randomIndex = Math.floor(Math.random() * quotes.length);
   return quotes[randomIndex];
 }
-// Step 4: Function to display quote
+// Function to display quote with a short fade-out/fade-in effect
 function displayQuote() {
-  const { text, author } = getRandomQuote();
-  quoteElement.textContent = `"${text}"`;
-  authorElement.textContent = `— ${author}`;
+  // add fade-out class to trigger CSS transition
+  quoteElement.classList.add("fade-out");
+  authorElement.classList.add("fade-out");
+
+  // wait for the fade-out to be visible, then change text and remove the class
+  // 220ms matches CSS transition (slightly shorter than 240ms used in CSS)
+  setTimeout(() => {
+    const { text, author } = getRandomQuote();
+    quoteElement.textContent = `"${text}"`;
+    authorElement.textContent = `— ${author}`;
+
+    // remove fade-out so CSS transition will animate it back to visible
+    quoteElement.classList.remove("fade-out");
+    authorElement.classList.remove("fade-out");
+  }, 220);
 }
+
 // Step 5: Add click event listener
 newQuoteBtn.addEventListener("click", displayQuote);
