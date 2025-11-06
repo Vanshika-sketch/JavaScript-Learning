@@ -7,18 +7,33 @@
       <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Multiplication Table Generator</h1>
+   <body>
+  <main class="card">
+    <header class="card-header">
+      <h1>Multiplication<br>Table Generator</h1>
+    </header>
 
-    <label for="number">Enter a number : </label>
-    <input id="number" type="number" value="5">
+    <form id="controls" class="controls" onsubmit="return false;">
+      <label class="control">
+        <span class="label-text">Enter a number</span>
+        <input id="number" type="number" value="5" min="0" />
+      </label>
 
-    <label for="limit">Enter the limit : </label>
-    <input id="limit" type="number" value="10">
+      <label class="control">
+        <span class="label-text">Enter the limit</span>
+        <input id="limit" type="number" value="10" min="1" />
+      </label>
 
-    <button id="generate">Generate Table</button>
+      <div class="action">
+        <button id="generate" type="button">Generate Table</button>
+      </div>
+    </form>
 
-    <div id="result"></div>
-    <script src="script.js"></script>
+    <div id="result" class="result" aria-live="polite"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
 
 
 </body>
