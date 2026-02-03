@@ -27,3 +27,7 @@ function saveTasks(){
         console.error("saveTasks error:",err);
     }
 }
+
+function makeId(){
+    return Date.now() + Math.floor(Math.random()*1000); 
+}

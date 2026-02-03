@@ -138,24 +138,76 @@
 // console.log(rev); 
 
 
-function square(n) {
-  return n * n;
-}
-console.log(square(4));
+// function square(n) {
+//   return n * n;
+// }
+// console.log(square(4));
 
-function isEven(n) {
-  return n % 2 === 0;
-}
-console.log(isEven(7)); 
+// function isEven(n) {
+//   return n % 2 === 0;
+// }
+// console.log(isEven(7)); 
 
 
-// Max of 3
-function max(a, b, c) {
-  return (a > b && a > c) ? a : (b > c ? b : c);
-}
-console.log(max(5, 9, 2)); 
+// // Max of 3
+// function max(a, b, c) {
+//   return (a > b && a > c) ? a : (b > c ? b : c);
+// }
+// console.log(max(5, 9, 2)); 
 
-// Arrow function sum of array
-let arr = [1, 2, 3, 4];
-let sum = arr.reduce((acc, val) => acc + val, 0);
-console.log(sum)
+// // Arrow function sum of array
+// let arr = [1, 2, 3, 4];
+// let sum = arr.reduce((acc, val) => acc + val, 0);
+// console.log(sum)
+
+
+// function one(call_two){
+//   call_two();
+//   console.log("step 1:");
+  
+// }
+
+// function two(){
+  
+//   console.log("step 2:");
+  
+// }
+ 
+
+// one(two);
+
+
+
+
+
+let stocks = {
+  Fruits : ["strawberry","grapes","banana","apple"],
+  Liquid :["water","ice"],
+  Holder :["cone","cup","stick"],
+  Toppings :["choclate","peanuts"],
+};
+
+
+let order = (Fruit_name,call_production) =>{
+  setTimeout(()=>{
+    console.log(`${stocks.Fruits[Fruit_name]} was selected`);
+      call_production();
+  },2000);
+ 
+ 
+};
+
+let production = () => {
+  setTimeout(()=>{
+    console.log("production has started");
+    setTimeout(()=>{
+      console.log("the fruit has been chopped");
+      setTimeout(()=>{
+        console.log(`${stocks.Liquid[0]} and ${stocks.Liquid[1]} was added`);
+      },1000)
+    },2000 )
+  }, 0);
+  
+};
+
+order(0,production); 
