@@ -42,6 +42,18 @@ let production = () => {
       console.log("the fruit has been chopped");
       setTimeout(()=>{
         console.log(`${stocks.Liquid[0]} and ${stocks.Liquid[1]} was added`);
+        setTimeout(()=>{
+            console.log("the machine was started");
+            setTimeout(()=>{
+                console.log(`${stocks.Holder[0]} has been selected`);
+                setTimeout(()=>{
+                    console.log(`${stocks.Toppings[0]} had been added`);
+                    setTimeout(()=>{
+                        console.log("serve ice cream....")
+                    },2000)
+                },3000)
+            },2000)
+        },1000)
       },1000)
     },2000 )
   }, 0);
